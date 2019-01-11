@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/install
+
+Name: yxtbot_gazebo
+Description: Description of yxtbot_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yxtwl94/yxtbot/install/lib 
+Requires: 

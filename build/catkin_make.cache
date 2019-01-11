@@ -1,0 +1,2 @@
+modell:topic_demo:yxtbot_gazebo:yxtbot_nav
+-DCATKIN_DEVEL_PREFIX=/home/yxtwl94/yxtbot/devel -DCMAKE_INSTALL_PREFIX=/home/yxtwl94/yxtbot/install -G Unix Makefiles

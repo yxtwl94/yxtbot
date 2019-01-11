@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="world" default="empty"/> 
+  <arg name="paused" default="false"/>  <!--在暂停状态打开Gazebo (default false)-->
+  <arg name="use_sim_time" default="true"/>  <!--节点启动模拟时间，启动主题topic /clock (default true)-->
+  <arg name="gui" default="True"/>      <!--启动Gazebo用户接口 (default true)-->
+  <arg name="headless" default="false"/>  <!--禁止仿真器调用任何渲染组件。不能在gui:=true (default false)是使用-->
+  <arg name="debug" default="false"/>  <!---用gdb (default false)调试模式启动 gzserver (Gazebo Server)-->
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--arg name="world_name" value="$(find mybot_gazebo)/worlds/mybot.world"/-->
+    <arg name="world_name" value="$(find yxtbot_gazebo)/worlds/turtlebot_playground.world"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find modell)/urdf/yxtbot.xacro'"/>
+
+  <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+   args="-urdf -param robot_description -model yxtbot" />
+
+</launch>

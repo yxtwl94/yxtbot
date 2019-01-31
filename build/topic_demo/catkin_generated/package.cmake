@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "topic_demo")
 set(topic_demo_VERSION "0.0.0")
-set(topic_demo_MAINTAINER "yxtwl94 <yxtwl94@hotmail.com>")
+set(topic_demo_MAINTAINER "yxtwl94 <yxtwl95@hotmail.com>")
 set(topic_demo_PACKAGE_FORMAT "2")
 set(topic_demo_BUILD_DEPENDS "roscpp" "message_generation" "rospy" "std_msg" "message_generation")
 set(topic_demo_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msg" "message_generation")

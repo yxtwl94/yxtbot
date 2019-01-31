@@ -118,6 +118,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yxtwl94/yxtbot/build/gtest/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/modell/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/service_demo/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/topic_demo/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/yxtbot_gazebo/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/yxtbot_nav/cmake_install.cmake")

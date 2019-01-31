@@ -1,16 +1,13 @@
 #!/usr/bin/env python
 '''pytalker ROS Node'''
 import rospy
-from topic_demo.msg import gps
+from topic_demo.msg import sensor
 import math
 
 
-def callback(gps):
+def callback(sensor):
     '''pytalker Callback Function'''
-    if gps.y>0:
-        rospy.loginfo('Larger than 0,the value is %f,state=%s', gps.y,gps.state)
-    else:
-        rospy.loginfo('Smaller than 0,the value is %f,state=%s', gps.y,gps.state)
+    rospy.loginfo('Speed is %f,state=%s', sensor.a,sensor.state)
 
 
 def pylistener():
@@ -22,7 +19,7 @@ def pylistener():
     # run simultaneously.
     rospy.init_node('pylistener', anonymous=True)
 
-    rospy.Subscriber("R_info", gps, callback)
+    rospy.Subscriber("R_info", sensor, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()

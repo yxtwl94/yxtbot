@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/install
+
+Name: ser
+Description: Description of ser
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yxtwl94/yxtbot/install/lib 
+Requires: 

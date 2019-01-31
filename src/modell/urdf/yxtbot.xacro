@@ -2,8 +2,6 @@
 
 <robot name="yxtbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:property name="cameraSize" value="0.05"/>
-  <xacro:property name="cameraMass" value="0.1"/>
 
   <xacro:include filename="$(find modell)/urdf/yxtbot.gazebo" />
   <xacro:include filename="$(find modell)/urdf/materials.xacro" />
@@ -158,36 +156,48 @@
   </joint>
 
 
-  <link name="camera">
+  <link name="camera_link">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+        <mesh filename="package://modell/meshes/realsense.dae" />
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+        <mesh filename="package://modell/meshes/realsense.dae" />
       </geometry>
       <material name="green"/>
     </visual>
 
     <inertial>
-      <mass value="${cameraMass}" />
+      <mass value="1e-5" />
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
   </link>
 
   <joint name="camera_joint" type="fixed">
     <axis xyz="0 1 0" />
-    <origin xyz=".2 0 0" rpy="0 0 0"/>
+    <origin xyz=".1 0 0.1" rpy="0 0 0"/>
     <parent link="chassis"/>
-    <child link="camera"/>
+    <child link="camera_link"/>
   </joint>
+
+  <!-- generate an optical frame http://www.ros.org/reps/rep-0103.html#suffix-frames
+      so that ros and opencv can operate on the camera frame correctly -->
+  <joint name="camera_optical_joint" type="fixed">
+    <!-- these values have to be these values otherwise the gazebo camera image
+        won't be aligned properly with the frame it is supposedly originating from -->
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+  <link name="camera_link_optical">
+  </link>
 
 
   <joint name="hokuyo_joint" type="fixed">
@@ -197,7 +207,7 @@
     <child link="hokuyo"/>
   </joint>
 
-  <!-- Hokuyo Laser -->
+
   <link name="hokuyo">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -222,4 +232,3 @@
 
 
 </robot>
-

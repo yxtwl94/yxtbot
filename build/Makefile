@@ -478,6 +478,201 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f service_demo/CMakeFiles/client.dir/build.make service_demo/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f service_demo/CMakeFiles/server.dir/build.make service_demo/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_genpy
+
+# Build rule for target.
+service_demo_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_genpy
+.PHONY : service_demo_genpy
+
+# fast build rule for target.
+service_demo_genpy/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_genpy.dir/build.make service_demo/CMakeFiles/service_demo_genpy.dir/build
+.PHONY : service_demo_genpy/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_gennodejs
+
+# Build rule for target.
+service_demo_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_gennodejs
+.PHONY : service_demo_gennodejs
+
+# fast build rule for target.
+service_demo_gennodejs/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_gennodejs.dir/build.make service_demo/CMakeFiles/service_demo_gennodejs.dir/build
+.PHONY : service_demo_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages_py
+
+# Build rule for target.
+service_demo_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages_py
+.PHONY : service_demo_generate_messages_py
+
+# fast build rule for target.
+service_demo_generate_messages_py/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages_py.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages_py.dir/build
+.PHONY : service_demo_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages_cpp
+
+# Build rule for target.
+service_demo_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages_cpp
+.PHONY : service_demo_generate_messages_cpp
+
+# fast build rule for target.
+service_demo_generate_messages_cpp/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages_cpp.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages_cpp.dir/build
+.PHONY : service_demo_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_gencpp
+
+# Build rule for target.
+service_demo_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_gencpp
+.PHONY : service_demo_gencpp
+
+# fast build rule for target.
+service_demo_gencpp/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_gencpp.dir/build.make service_demo/CMakeFiles/service_demo_gencpp.dir/build
+.PHONY : service_demo_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages_lisp
+
+# Build rule for target.
+service_demo_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages_lisp
+.PHONY : service_demo_generate_messages_lisp
+
+# fast build rule for target.
+service_demo_generate_messages_lisp/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages_lisp.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages_lisp.dir/build
+.PHONY : service_demo_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _service_demo_generate_messages_check_deps_greeting
+
+# Build rule for target.
+_service_demo_generate_messages_check_deps_greeting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _service_demo_generate_messages_check_deps_greeting
+.PHONY : _service_demo_generate_messages_check_deps_greeting
+
+# fast build rule for target.
+_service_demo_generate_messages_check_deps_greeting/fast:
+	$(MAKE) -f service_demo/CMakeFiles/_service_demo_generate_messages_check_deps_greeting.dir/build.make service_demo/CMakeFiles/_service_demo_generate_messages_check_deps_greeting.dir/build
+.PHONY : _service_demo_generate_messages_check_deps_greeting/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages
+
+# Build rule for target.
+service_demo_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages
+.PHONY : service_demo_generate_messages
+
+# fast build rule for target.
+service_demo_generate_messages/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages.dir/build
+.PHONY : service_demo_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_geneus
+
+# Build rule for target.
+service_demo_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_geneus
+.PHONY : service_demo_geneus
+
+# fast build rule for target.
+service_demo_geneus/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_geneus.dir/build.make service_demo/CMakeFiles/service_demo_geneus.dir/build
+.PHONY : service_demo_geneus/fast
+
+#=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f service_demo/CMakeFiles/_catkin_empty_exported_target.dir/build.make service_demo/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_genlisp
+
+# Build rule for target.
+service_demo_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_genlisp
+.PHONY : service_demo_genlisp
+
+# fast build rule for target.
+service_demo_genlisp/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_genlisp.dir/build.make service_demo/CMakeFiles/service_demo_genlisp.dir/build
+.PHONY : service_demo_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages_nodejs
+
+# Build rule for target.
+service_demo_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages_nodejs
+.PHONY : service_demo_generate_messages_nodejs
+
+# fast build rule for target.
+service_demo_generate_messages_nodejs/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages_nodejs.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages_nodejs.dir/build
+.PHONY : service_demo_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named service_demo_generate_messages_eus
+
+# Build rule for target.
+service_demo_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_demo_generate_messages_eus
+.PHONY : service_demo_generate_messages_eus
+
+# fast build rule for target.
+service_demo_generate_messages_eus/fast:
+	$(MAKE) -f service_demo/CMakeFiles/service_demo_generate_messages_eus.dir/build.make service_demo/CMakeFiles/service_demo_generate_messages_eus.dir/build
+.PHONY : service_demo_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named topic_demo_genpy
 
 # Build rule for target.
@@ -504,17 +699,17 @@ topic_demo_generate_messages_py/fast:
 .PHONY : topic_demo_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named topic_demo_gennodejs
+# Target rules for targets named topic_demo_generate_messages_lisp
 
 # Build rule for target.
-topic_demo_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_gennodejs
-.PHONY : topic_demo_gennodejs
+topic_demo_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_generate_messages_lisp
+.PHONY : topic_demo_generate_messages_lisp
 
 # fast build rule for target.
-topic_demo_gennodejs/fast:
-	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_gennodejs.dir/build.make topic_demo/CMakeFiles/topic_demo_gennodejs.dir/build
-.PHONY : topic_demo_gennodejs/fast
+topic_demo_generate_messages_lisp/fast:
+	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_generate_messages_lisp.dir/build.make topic_demo/CMakeFiles/topic_demo_generate_messages_lisp.dir/build
+.PHONY : topic_demo_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named listener
@@ -543,45 +738,6 @@ topic_demo_generate_messages_cpp/fast:
 .PHONY : topic_demo_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named topic_demo_generate_messages
-
-# Build rule for target.
-topic_demo_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_generate_messages
-.PHONY : topic_demo_generate_messages
-
-# fast build rule for target.
-topic_demo_generate_messages/fast:
-	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_generate_messages.dir/build.make topic_demo/CMakeFiles/topic_demo_generate_messages.dir/build
-.PHONY : topic_demo_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
-
-# Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f topic_demo/CMakeFiles/_catkin_empty_exported_target.dir/build.make topic_demo/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-#=============================================================================
-# Target rules for targets named topic_demo_geneus
-
-# Build rule for target.
-topic_demo_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_geneus
-.PHONY : topic_demo_geneus
-
-# fast build rule for target.
-topic_demo_geneus/fast:
-	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_geneus.dir/build.make topic_demo/CMakeFiles/topic_demo_geneus.dir/build
-.PHONY : topic_demo_geneus/fast
-
-#=============================================================================
 # Target rules for targets named _topic_demo_generate_messages_check_deps_sensor
 
 # Build rule for target.
@@ -608,17 +764,30 @@ topic_demo_generate_messages_eus/fast:
 .PHONY : topic_demo_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named topic_demo_generate_messages_lisp
+# Target rules for targets named topic_demo_generate_messages
 
 # Build rule for target.
-topic_demo_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_generate_messages_lisp
-.PHONY : topic_demo_generate_messages_lisp
+topic_demo_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_generate_messages
+.PHONY : topic_demo_generate_messages
 
 # fast build rule for target.
-topic_demo_generate_messages_lisp/fast:
-	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_generate_messages_lisp.dir/build.make topic_demo/CMakeFiles/topic_demo_generate_messages_lisp.dir/build
-.PHONY : topic_demo_generate_messages_lisp/fast
+topic_demo_generate_messages/fast:
+	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_generate_messages.dir/build.make topic_demo/CMakeFiles/topic_demo_generate_messages.dir/build
+.PHONY : topic_demo_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named topic_demo_geneus
+
+# Build rule for target.
+topic_demo_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_geneus
+.PHONY : topic_demo_geneus
+
+# fast build rule for target.
+topic_demo_geneus/fast:
+	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_geneus.dir/build.make topic_demo/CMakeFiles/topic_demo_geneus.dir/build
+.PHONY : topic_demo_geneus/fast
 
 #=============================================================================
 # Target rules for targets named topic_demo_genlisp
@@ -672,6 +841,19 @@ topic_demo_generate_messages_nodejs/fast:
 	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_generate_messages_nodejs.dir/build.make topic_demo/CMakeFiles/topic_demo_generate_messages_nodejs.dir/build
 .PHONY : topic_demo_generate_messages_nodejs/fast
 
+#=============================================================================
+# Target rules for targets named topic_demo_gennodejs
+
+# Build rule for target.
+topic_demo_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_demo_gennodejs
+.PHONY : topic_demo_gennodejs
+
+# fast build rule for target.
+topic_demo_gennodejs/fast:
+	$(MAKE) -f topic_demo/CMakeFiles/topic_demo_gennodejs.dir/build.make topic_demo/CMakeFiles/topic_demo_gennodejs.dir/build
+.PHONY : topic_demo_gennodejs/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -709,21 +891,35 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... client"
+	@echo "... server"
+	@echo "... service_demo_genpy"
+	@echo "... service_demo_gennodejs"
+	@echo "... service_demo_generate_messages_py"
+	@echo "... service_demo_generate_messages_cpp"
+	@echo "... service_demo_gencpp"
+	@echo "... service_demo_generate_messages_lisp"
+	@echo "... _service_demo_generate_messages_check_deps_greeting"
+	@echo "... service_demo_generate_messages"
+	@echo "... service_demo_geneus"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... service_demo_genlisp"
+	@echo "... service_demo_generate_messages_nodejs"
+	@echo "... service_demo_generate_messages_eus"
 	@echo "... topic_demo_genpy"
 	@echo "... topic_demo_generate_messages_py"
-	@echo "... topic_demo_gennodejs"
+	@echo "... topic_demo_generate_messages_lisp"
 	@echo "... listener"
 	@echo "... topic_demo_generate_messages_cpp"
-	@echo "... topic_demo_generate_messages"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... topic_demo_geneus"
 	@echo "... _topic_demo_generate_messages_check_deps_sensor"
 	@echo "... topic_demo_generate_messages_eus"
-	@echo "... topic_demo_generate_messages_lisp"
+	@echo "... topic_demo_generate_messages"
+	@echo "... topic_demo_geneus"
 	@echo "... topic_demo_genlisp"
 	@echo "... talker"
 	@echo "... topic_demo_gencpp"
 	@echo "... topic_demo_generate_messages_nodejs"
+	@echo "... topic_demo_gennodejs"
 .PHONY : help
 
 

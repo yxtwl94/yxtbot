@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(modell)
+subdirs(service_demo)
 subdirs(topic_demo)
 subdirs(yxtbot_gazebo)
 subdirs(yxtbot_nav)

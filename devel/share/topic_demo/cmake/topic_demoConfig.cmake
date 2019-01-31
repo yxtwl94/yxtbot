@@ -99,7 +99,7 @@ if(NOT "/home/yxtwl94/yxtbot/devel/include " STREQUAL " ")
   elseif(NOT " " STREQUAL " ")
     set(_report "Check the website '' for information and consider reporting the problem.")
   else()
-    set(_report "Report the problem to the maintainer 'yxtwl94 <yxtwl94@hotmail.com>' and request to fix the problem.")
+    set(_report "Report the problem to the maintainer 'yxtwl94 <yxtwl95@hotmail.com>' and request to fix the problem.")
   endif()
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yxtwl94/yxtbot/devel/lib;/home/yxtwl94/yxtbot/devel/lib;/home/yxtwl94/mybot_ws/devel/lib;/home/yxtwl94/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/yxtwl94/yxtbot/devel/lib;/home/yxtwl94/yxtbot/devel/lib;/home/yxtwl94/mybot_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

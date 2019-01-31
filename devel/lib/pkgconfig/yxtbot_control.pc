@@ -1,8 +1,0 @@
-prefix=/home/yxtwl94/yxtbot/devel
-
-Name: yxtbot_control
-Description: Description of yxtbot_control
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/yxtwl94/yxtbot/devel/lib 
-Requires: 

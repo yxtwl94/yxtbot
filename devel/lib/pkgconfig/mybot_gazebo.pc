@@ -1,8 +1,0 @@
-prefix=/home/yxtwl94/yxtbot/devel
-
-Name: mybot_gazebo
-Description: Description of mybot_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/yxtwl94/yxtbot/devel/lib 
-Requires: 

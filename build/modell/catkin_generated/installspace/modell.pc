@@ -1,8 +1,0 @@
-prefix=/home/yxtwl94/yxtbot/install
-
-Name: modell
-Description: Description of modell
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/yxtwl94/yxtbot/install/lib 
-Requires: 

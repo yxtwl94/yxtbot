@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/devel
+
+Name: mecanumbot
+Description: Description of mecanumbot
+Version: 0.2.0
+Cflags: -I/home/yxtwl94/yxtbot/devel/include
+Libs: -L/home/yxtwl94/yxtbot/devel/lib 
+Requires: message_runtime

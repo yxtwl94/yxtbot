@@ -4,7 +4,7 @@
   <arg name="world" default="empty"/> 
   <arg name="paused" default="false"/>  <!--在暂停状态打开Gazebo (default false)-->
   <arg name="use_sim_time" default="true"/>  <!--节点启动模拟时间，启动主题topic /clock (default true)-->
-  <arg name="gui" default="False"/>      <!--启动Gazebo用户接口 (default true)-->
+  <arg name="gui" default="true"/>      <!--启动Gazebo用户接口 (default true)-->
   <arg name="headless" default="false"/>  <!--禁止仿真器调用任何渲染组件。不能在gui:=true (default false)是使用-->
   <arg name="debug" default="false"/>  <!---用gdb (default false)调试模式启动 gzserver (Gazebo Server)-->
   

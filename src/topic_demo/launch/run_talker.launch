@@ -1,4 +1,0 @@
-<launch>
-  <!--node name="listener" pkg="topic_demo" type="listener" output="screen"/-->
-  <node name="talker" pkg="topic_demo" type="talker" output="screen"/>
-</launch>

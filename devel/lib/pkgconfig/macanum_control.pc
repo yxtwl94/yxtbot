@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/devel
+
+Name: macanum_control
+Description: Description of macanum_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/yxtwl94/yxtbot/devel/lib 
+Requires: 

@@ -81,7 +81,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'topic_demo': ['/home/yxtwl94/yxtbot/src/topic_demo/msg']}
+// {'std_msgs': ['/opt/ros/melodic/share/std_msgs/cmake/../msg'], 'topic_demo': ['/home/yxtwl94/yxtbot/src/topic_demo/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -148,10 +148,10 @@ struct Definition< ::topic_demo::sensor_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 v\n\
-float32 a\n\
-string state\n\
-";
+    return "float32 v\n"
+"float32 a\n"
+"string state\n"
+;
   }
 
   static const char* value(const ::topic_demo::sensor_<ContainerAllocator>&) { return value(); }

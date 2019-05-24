@@ -32,7 +32,12 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -42,7 +47,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/yxtwl94/yxtbot/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -54,7 +59,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE PROGRAM FILES "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/yxtwl94/yxtbot/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -66,43 +71,52 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE PROGRAM FILES "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/env.sh")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yxtwl94/yxtbot/install/setup.bash")
+   "/home/yxtwl94/yxtbot/install/setup.bash;/home/yxtwl94/yxtbot/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.bash"
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/local_setup.bash"
+    )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yxtwl94/yxtbot/install/setup.sh")
+   "/home/yxtwl94/yxtbot/install/setup.sh;/home/yxtwl94/yxtbot/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.sh"
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/local_setup.sh"
+    )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/yxtwl94/yxtbot/install/setup.zsh")
+   "/home/yxtwl94/yxtbot/install/setup.zsh;/home/yxtwl94/yxtbot/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/yxtwl94/yxtbot/install" TYPE FILE FILES
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/setup.zsh"
+    "/home/yxtwl94/yxtbot/build/catkin_generated/installspace/local_setup.zsh"
+    )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/home/yxtwl94/yxtbot/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -117,9 +131,12 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/yxtwl94/yxtbot/build/gtest/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/macanum_control/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/macanum_odom/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/modell/cmake_install.cmake")
-  include("/home/yxtwl94/yxtbot/build/service_demo/cmake_install.cmake")
-  include("/home/yxtwl94/yxtbot/build/topic_demo/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/slamdog_modell/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/mecanumbot-ros-pkg/cmake_install.cmake")
+  include("/home/yxtwl94/yxtbot/build/tx2_control/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/yxtbot_gazebo/cmake_install.cmake")
   include("/home/yxtwl94/yxtbot/build/yxtbot_nav/cmake_install.cmake")
 

@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/devel
+
+Name: slamdog_msgs
+Description: Description of slamdog_msgs
+Version: 0.0.0
+Cflags: -I/home/yxtwl94/yxtbot/devel/include
+Libs: -L/home/yxtwl94/yxtbot/devel/lib 
+Requires: message_runtime

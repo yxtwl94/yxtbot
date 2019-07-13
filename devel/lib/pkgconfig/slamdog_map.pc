@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/devel
+
+Name: slamdog_map
+Description: Description of slamdog_map
+Version: 0.0.0
+Cflags: -I/home/yxtwl94/yxtbot/src/slamdog/catkin_ws/src/slamdog_map/include
+Libs: -L/home/yxtwl94/yxtbot/devel/lib -lslamdog_map
+Requires: roscpp nav_msgs geometry_msgs

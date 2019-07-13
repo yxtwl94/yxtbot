@@ -1,0 +1,8 @@
+prefix=/home/yxtwl94/yxtbot/devel
+
+Name: slamdog_utils
+Description: Description of slamdog_utils
+Version: 0.0.0
+Cflags: -I/home/yxtwl94/yxtbot/src/slamdog_common/slamdog_utils/include -I/usr/include/eigen3
+Libs: -L/home/yxtwl94/yxtbot/devel/lib -lslamdog_utils
+Requires: geometry_msgs tf costmap_2d
